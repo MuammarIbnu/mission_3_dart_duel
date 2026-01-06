@@ -1,3 +1,6 @@
+// import 'package:flutter/material.dart';
+// import 'package:flutter/cupertino.dart';
+
 void main() {
   //Palindrome
   String kata = ("Muammar");
@@ -23,3 +26,22 @@ void main() {
   }
   print('Jumlah Huruf Vokal: $jumlahVokal');
 }
+
+
+// class CaseTiga extends StatelessWidget {
+//   static const routeName = '/case3';
+//
+//   const CaseTiga({super.key});
+//
+//   @override
+//   bool operator ==(Object other) {
+//     // TODO: implement ==
+//     return super == other;
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     // TODO: implement build
+//     throw UnimplementedError();
+//   }
+// }
