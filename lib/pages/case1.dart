@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CaseSatu extends StatelessWidget {
+  static const routeName = '/case1';
   const CaseSatu({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,6 @@ class CaseSatu extends StatelessWidget {
     int tahunSekarang = 2026;
     int bulanSekarang = DateTime.now().month; // bulan sekarang
 
-    // List hasil output
     List<String> hasil = [];
     int total = 0;
 

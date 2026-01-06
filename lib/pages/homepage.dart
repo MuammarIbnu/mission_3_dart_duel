@@ -52,16 +52,24 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: _selectedIndex,
+
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.cases_sharp), label: 'Case 1'),
+          BottomNavigationBarItem(icon: Icon(Icons.cases_sharp), label: 'Case 2'),
+          BottomNavigationBarItem(icon: Icon(Icons.cases_sharp),label: 'Case 3'),
+        ],
+
         onTap: (index) {
           setState(() {
             _selectedIndex = index;
           });
 
+          // contoh menggunakan Navigator yang didaftarkan di main.dart
           if (index == 0) {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const CaseSatu ()),
+            Navigator.pushNamed(
+              context, CaseSatu.routeName,
             );
+          // contoh menggunakan Navigator langsung MaterialPageRouter
           } else if (index == 1) {
             Navigator.push(
               context,
@@ -74,12 +82,6 @@ class _HomePageState extends State<HomePage> {
             );
           }
         },
-
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.cases_sharp), label: 'Case 1'),
-          BottomNavigationBarItem(icon: Icon(Icons.cases_sharp), label: 'Case 2'),
-          BottomNavigationBarItem(icon: Icon(Icons.cases_sharp),label: 'Case 3'),
-        ],
       ),
     );
   }

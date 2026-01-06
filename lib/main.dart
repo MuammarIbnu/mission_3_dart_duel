@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mission_3_dart_duel/pages/case2.dart';
+import 'package:mission_3_dart_duel/pages/case3.dart';
 import 'pages/homepage.dart';
-// import 'pages/case1.dart';
+import 'pages/case1.dart';
 // import 'pages/case2.dart';
 // import 'pages/case3.dart';
 
@@ -18,9 +20,10 @@ class MyApp extends StatelessWidget {
       initialRoute: HomePage.routeName,
       routes: {
         HomePage.routeName: (context) => const HomePage(),
-        // HomePage.routeName: (context) => const HomePage(),
-        // RekapPage.routeName: (context) => RekapPage(),
-        // RekapPage.routeName: (context) => RekapPage(),
+        CaseSatu.routeName: (context) => const CaseSatu(),
+        // CaseDua.routeName: (context) => const CaseDua(),
+        // CaseTiga.routeName: (context) => const CaseTiga(),
+
       },
     );
   }
