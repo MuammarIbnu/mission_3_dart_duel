@@ -8,8 +8,8 @@ class CaseSatu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> teman = [
-      {'nama': 'Muammar', 'ultah': '2000-01-15'},
-      {'nama': 'Ibnu', 'ultah': '1945-01-20'},
+      {'nama': 'SBY', 'ultah': '2000-01-15'},
+      {'nama': 'Pabowo', 'ultah': '1945-01-20'},
       {'nama': 'Jokowi', 'ultah': null},
     ];
 
@@ -50,7 +50,7 @@ class CaseSatu extends StatelessWidget {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 10),
-            ...hasil.map((h) => Text(h)).toList(),
+            ...hasil.map((h) => Text(h)),
             const Divider(),
             Text("(Total ada $total teman yang harus kamu hubungi!)"),
           ],

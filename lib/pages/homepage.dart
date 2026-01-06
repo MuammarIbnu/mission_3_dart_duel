@@ -31,20 +31,29 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              // "Halaman Home ini dapat mengakses 3 case yang telah diberikan, Case 1: Informasi Ultah Teman, Case 2: Informasi Ultah Teman, Case 3: Informasi Ultah Teman",
-              "Halaman Home ini dapat mengakses 3 case yang telah disediakan:\n"
-                  "Case 1: Sistem Pengingat Ultah\n"
-                  "Case 2: Pengelola (harta) digital\n"
-                  "Case 3: Detektif kata otomatis",
+              "Halaman Home ini dapat mengakses 3 case yang telah disediakan",
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
                 ),
               textAlign: TextAlign.center,
               ),
+
+            const SizedBox(
+                height: 25),
+
+            const Text(
+                  "Case 1: Sistem Pengingat Ultah\n"
+                  "Case 2: Pengelola (harta) digital\n"
+                  "Case 3: Detektif kata otomatis",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+              textAlign: TextAlign.start,
+            ),
           ],
         ),
       ),

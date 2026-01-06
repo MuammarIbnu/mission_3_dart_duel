@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mission_3_dart_duel/pages/case2.dart';
-import 'package:mission_3_dart_duel/pages/case3.dart';
 import 'pages/homepage.dart';
 import 'pages/case1.dart';
 // import 'pages/case2.dart';

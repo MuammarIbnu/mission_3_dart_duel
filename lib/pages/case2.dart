@@ -146,7 +146,7 @@ class _CaseDuaState extends State<CaseDua> {
               controller: namaController,
               decoration: InputDecoration(
                   labelText: "Nama",
-                hintText: namaTerdaftar
+                  hintText: namaTerdaftar
                     ? "Cukup masukkan nama untuk login"
                     : "Masukkan nama baru untuk register",
                     ),
