@@ -1,12 +1,25 @@
-import 'package:flutter/material.dart';
+void main() {
+  //Palindrome
+  String kata = ("Muammar");
+  String kataLowerCase = kata.toLowerCase();
+  String terbalik = kataLowerCase.split('').reversed.join('');
 
-class CaseTiga extends StatefulWidget{
-  static const routeName = '/';
-  const CaseTiga({super.key});
+  print(kata);
+  print(kataLowerCase);
+  print(terbalik);
 
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
+  if (kataLowerCase == terbalik) {
+    print('Status Palindrome: IYA!');
+  } else {
+    print('Status Palindrome: TIDAK!');
   }
+  //Huruf Vokal
+  List<String> hurufVokal = ['a', 'i', 'u', 'e', 'o'];
+  int jumlahVokal = 0;
+  for (var huruf in kataLowerCase.split('')) {
+    if (hurufVokal.contains(huruf)) {
+      jumlahVokal++;
+    }
+  }
+  print('Jumlah Huruf Vokal: $jumlahVokal');
 }
