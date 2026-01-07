@@ -3,8 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../bankdata/bankaccount.dart';
 
 class CaseDua extends StatefulWidget {
-  static const routeName = '/case2';
-
+  // static const routeName = '/case2';
   const CaseDua({super.key});
 
   @override
